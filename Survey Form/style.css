@@ -7,3 +7,65 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#title {
+    color: white;
+    text-align: center;
+}
+
+#description {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+.container {
+    width: 50%;
+    border-radius: 10px;
+    background-color: rgba(87, 13, 156, 0.80);
+    margin: auto;
+    padding: 50px;
+    color: white;
+    font-size: 13pt;
+}
+
+#survey-form {
+    line-height: 2;
+}
+
+#name, #email, #number {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    font: inherit;
+    font-size: smaller;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+#dropdown, #favourite-feature {
+    width: 100%;
+    height: 36px;
+    border-radius: 5px;
+    font: inherit;
+    font-size: smaller;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+textarea {
+    width: 100%;
+}
+
+#submit {
+    width: 100%;
+    font: inherit;
+    background-color: #37af65;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    margin-top: 30px;
+    height: 40px;
+}
