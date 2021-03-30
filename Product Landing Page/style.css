@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Pacifico&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    /* background-color: rgb(245, 241, 237); */
+}
+
+.container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header{
+    position: fixed;
+    top: 0%;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin-left: 0%;
+    background: rgb(63,27,79);
+    background: linear-gradient(90deg, rgba(63,27,79,0.9920167896260067) 0%, rgba(255,239,78,1) 0%, rgba(0,255,158,1) 100%); 
+}
+
+#logo{
+    display: flex;
+    flex-grow: 1;
+    font-family: 'Pacifico', cursive;
+
+}
+
+#logo > img{
+    height: 50px;
+    width: 50px;
+}
+
+#logo a{
+    font-size: 25pt;
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+#nav-bar{
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+}
+#nav-bar a{
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+#header a:visited{
+    color: #000;
+}
+
+#nav-bar a:hover{
+    background-color: #00ff9e;
+}
+
+#intro{
+    margin-top: 100px;
+}

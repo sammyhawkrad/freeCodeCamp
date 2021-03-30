@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Product Landing Page</title>
 </head>
 <body>
     <header id="header">
-        <img src="http://www.adinkra.org/images/nkyimu_lg.gif" alt="" id="header-img">
+        <div id="logo"> 
+            <img src="http://www.adinkra.org/images/nkyimu_lg.gif" alt="" id="header-img">
+            <a href="#home">Original Kente</a>
+        </div>
         <nav id="nav-bar">
-            <a href="#home" id="home">Original Kente</a>
             <a href="#features" class="nav-link">Features</a>
             <a href="#exhibit" class="nav-link">How It's Made</a>
             <a href="#pricing" class="nav-link">Pricing</a>
         </nav>
     </header>
-
+    <div id="home"></div>
     <div class="container">
-        <h1>Handcrafted, authentic masterpieces</h1>
-        <form action="https://www.freecodecamp.com/email-submit" method="post">
-            <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
-            <button type="submit" id="submit">GET STARTED</button>
-        </form>
+        <section id="intro">
+            <h1>Handcrafted, authentic masterpieces</h1>
+            <form action="https://www.freecodecamp.com/email-submit" method="post">
+                <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
+                <button type="submit" id="submit">GET STARTED</button>
+            </form>
+        </section>
+
         <section id="features">
             <div class="feature">
                 <div class="icon">
@@ -175,7 +181,7 @@
         <a href="">Privacy</a>
         <a href="">Terms</a>
         <a href="">Contact</a>
-        <p>Copyright 2020, Original Kente</p>
+        <p>Copyright 2021, Original Kente</p>
     </footer>
     
     
