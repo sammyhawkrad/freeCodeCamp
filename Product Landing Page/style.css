@@ -18,8 +18,6 @@ body {
     display: flex;
     width: 100%;
     padding: 10px;
-    margin-left: 0%;
-    background: rgb(63,27,79);
     background: linear-gradient(90deg, rgba(63,27,79,0.9920167896260067) 0%, rgba(255,239,78,1) 0%, rgba(0,255,158,1) 100%); 
 }
 
@@ -42,7 +40,7 @@ body {
 }
 
 #nav-bar{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     font-weight: bold;
 }
@@ -61,4 +59,87 @@ body {
 
 #intro{
     margin-top: 100px;
+    text-align: center;
+}
+
+#email{
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+#submit, button{
+    background-color: #ffd100;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+#features{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.feature{
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    
+}
+
+.icon{
+    margin-right: 50px;
+    align-self: center;
+}
+
+#exhibit{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#pricing{
+    display: flex;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.item img{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+}
+
+.item p{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.item div{
+    align-self: stretch;
+    text-align: center;
+    background: rgba(0,255,158,1)
+}
+
+footer{
+    background-color: lightgrey;
+    margin-top: 50px;
+    position: absolute;
+    left: 15%; 
+    text-align: right;
+    padding: 10px;   
+}
+
+footer a{
+    text-decoration: none;
 }
