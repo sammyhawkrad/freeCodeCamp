@@ -9,43 +9,146 @@
 </head>
 <body>
     <nav id="navbar">
-        <header></header>
-        <a href="" class="nav-link"></a>
-        <a href="" class="nav-link"></a>
-        <a href="" class="nav-link"></a>
-        <a href="" class="nav-link"></a>
-        <a href="" class="nav-link"></a>
-        <a href="" class="nav-link"></a>
-        <a href="" class="nav-link"></a>
+        <header>Pandas</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Main_Features" class="nav-link">Main Features</a>
+        <a href="#Where_to_get_it" class="nav-link">Where to get it</a>
+        <a href="#Dependencies" class="nav-link">Dependencies</a>
+        <a href="#Installation_from_sources" class="nav-link">Installation from sources</a>
+        <a href="#License" class="nav-link">License</a>
+        <a href="#Documentation" class="nav-link">Documentation</a>
+        <a href="#Background" class="nav-link">Background</a>
+        <a href="#Getting_help" class="nav-link">Getting help</a>
+        <a href="#Discussion_and_Development" class="nav-link">Discussion and Development</a>
+        <a href="#Contributing_to_pandas" class="nav-link">Contributing to pandas</a>
 
     </nav>
+
     <main id="main-doc">
-        <section class="main-section" id="">
-            <header></header>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>pandas is a Python package that provides fast, flexible, and expressive data structures designed to make working with
+            "relational" or "labeled" data both easy and intuitive. It aims to be the fundamental high-level building block for
+            doing practical, real world data analysis in Python. Additionally, it has the broader goal of becoming the most powerful
+            and flexible open source data analysis / manipulation tool available in any language. It is already well on its way
+            towards this goal.</p>
         </section>
 
-        <section class="main-section" id="">
-            <header></header>
+        <section class="main-section" id="Main_Features">
+            <header>Main Features</header>
+            <p>Here are just a few of the things that pandas does well:</p>
+            <ul>
+                <li>Easy handling of missing data (represented as NaN, NA, or NaT) in floating point as well as non-floating point data</li>
+                <li>Size mutability: columns can be inserted and deleted from DataFrame and higher dimensional objects</li>
+                <li>Automatic and explicit data alignment: objects can be explicitly aligned to a set of labels, or the user can simply
+                ignore the labels and let Series, DataFrame, etc. automatically align the data for you in computations</li>
+                <li>Powerful, flexible group by functionality to perform split-apply-combine operations on data sets, for both aggregating
+                and transforming data</li>
+                <li>Make it easy to convert ragged, differently-indexed data in other Python and NumPy data structures into DataFrame
+                objects</li>
+                <li>Intelligent label-based slicing, fancy indexing, and subsetting of large data sets</li>
+                <li>Intuitive merging and joining data sets</li>
+                <li>Flexible reshaping and pivoting of data sets</li>
+                <li>Hierarchical labeling of axes (possible to have multiple labels per tick)</li>
+                <li>Robust IO tools for loading data from flat files (CSV and delimited), Excel files, databases, and saving/loading data
+                from the ultrafast HDF5 format</li>
+                <li>Time series-specific functionality: date range generation and frequency conversion, moving window statistics, date
+                shifting and lagging</li>
+
+            </ul>
         </section>
 
-        <section class="main-section" id="">
-            <header></header>
+        <section class="main-section" id="Where_to_get_it">
+            <header>Where to get it</header>
+            <p>The source code is currently hosted on GitHub at: <a href="https://github.com/pandas-dev/pandas">https://github.com/pandas-dev/pandas</a></p>
+            <p>Binary installers for the latest released version are available at the Python Package Index (PyPI) and on Conda.</p>
+            <code>
+                # conda <br>
+                conda install pandas
+            </code>
+            <br>
+            <code>
+                # or PyPI <br>
+                pip install pandas
+            </code>
         </section>
 
-        <section class="main-section" id="">
-            <header></header>
+        <section class="main-section" id="Dependencies">
+            <header>Dependencies</header>
+            <ul>
+                <li>NumPy - Adds support for large, multi-dimensional arrays, matrices and high-level mathematical functions to operate on
+                these arrays</li>
+                <li>python-dateutil - Provides powerful extensions to the standard datetime module</li>
+                <li>pytz - Brings the Olson tz database into Python which allows accurate and cross platform timezone calculations</li>
+            </ul>
+            <p>See the <a href="https://pandas.pydata.org/pandas-docs/stable/install.html#dependencies">full installation instructions</a> for minimum supported versions of required, recommended and optional
+            dependencies.</p>
         </section>
 
-        <section class="main-section" id="">
-            <header></header>
+        <section class="main-section" id="Installation_from_sources">
+            <header>Installation from sources</header>
+            <p>To install pandas from source you need Cython in addition to the normal dependencies above. Cython can be installed from
+            PyPI:</p>
+            <code>pip install cython</code>
+            <p>In the pandas directory (same one where you found this file after cloning the git repo), execute:</p>
+            <code>python setup.py install</code>
+            <p>or for installing in development mode:</p>
+            <code>python -m pip install -e . --no-build-isolation --no-use-pep517</code>
+            <p>If you have make, you can also use make develop to run the same command.</p>
+            <p>or alternatively</p>
+            <code>python setup.py develop</code>
+            <p>See the full instructions for <a href="https://pandas.pydata.org/pandas-docs/stable/install.html#installing-from-source">installing from source</a> .</p>
         </section>
 
-        <section class="main-section" id="">
-            <header></header>
+        <section class="main-section" id="License">
+            <header>License</header>
+            <p><a href="https://github.com/pandas-dev/pandas/blob/master/LICENSE">BSD 3</a></p>
         </section>
 
-        <section class="main-section" id="">
-            <header></header>
+        <section class="main-section" id="Documentation">
+            <header>Documentation</header>
+            <p>The official documentation is hosted on PyData.org: <a href="https://pandas.pydata.org/pandas-docs/stable">https://pandas.pydata.org/pandas-docs/stable</a> </p>
+        </section>
+
+        <section class="main-section" id="Background">
+            <header>Background</header>
+            <p>Work on pandas started at AQR (a quantitative hedge fund) in 2008 and has been under active development since then.</p>
+        </section>
+
+        <section class="main-section" id="Getting_help">
+            <header>Getting help</header>
+            <p>For usage questions, the best place to go to is <a href="https://stackoverflow.com/questions/tagged/pandas">StackOverflow</a> . Further, general questions and discussions can also take
+            place on the <a href="https://groups.google.com/forum/?fromgroups#!forum/pydata">pydata mailing list</a>.</p>
+        </section>
+
+        <section class="main-section" id="Discussion_and_Development">
+            <header>Discussion and Development</header>
+            <p>Most development discussions take place on GitHub in this <a href="https://github.com/pandas-dev/pandas">repo</a>. Further, the <a href="https://mail.python.org/mailman/listinfo/pandas-dev">pandas-dev mailing list</a>  can also be used
+            for specialized discussions or design issues, and a <a href="https://gitter.im/pydata/pandas">Gitter channel</a> is available for quick development related questions.</p>
+        </section>
+
+        <section class="main-section" id="Contributing_to_pandas">
+            <header>Contributing to pandas</header>
+            <p>All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome.</p>
+            
+            <p>A detailed overview on how to contribute can be found in the <a href="https://pandas.pydata.org/docs/dev/development/contributing.html">contributing guide</a>. 
+            There is also an <a href="https://github.com/pandas-dev/pandas/blob/master/.github/CONTRIBUTING.md">overview</a>on GitHub.</p>
+            
+            <p>If you are simply looking to start working with the pandas codebase, navigate to the GitHub "issues" tab and start
+            looking through interesting issues. There are a number of issues listed under Docs and good first issue where you could
+            start out.</p>
+            
+            <p>You can also triage issues which may include reproducing bug reports, or asking for vital information such as version
+            numbers or reproduction instructions. If you would like to start triaging issues, one easy way to get started is to
+            subscribe to pandas on CodeTriage.</p>
+            
+            <p>Or maybe through using pandas you have an idea of your own or are looking for something in the documentation and
+            thinking ‘this can be improved’...you can do something about it!</p>
+            
+            <p>Feel free to ask questions on the mailing list or on Gitter.</p>
+            
+            <p>As contributors and maintainers to this project, you are expected to abide by pandas' code of conduct. More information
+            can be found at: <a href="https://github.com/pandas-dev/pandas/blob/master/.github/CODE_OF_CONDUCT.md">Contributor Code of Conduct</a>.</p>
         </section>
 
     </main>
