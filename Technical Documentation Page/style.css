@@ -1,0 +1,66 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, li {
+    line-height: 1.5rem;
+    margin-left: 20px;
+}
+
+#navbar{
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 2px solid gray;
+}
+
+#navbar a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-top: 1px solid black;
+    color: gray;
+}
+
+#navbar a:active {
+    color: black;
+}
+
+#navbar a:hover {
+    background-color: azure;
+}
+
+#navbar header {
+    padding-left: 20px;
+}
+
+#main-doc {
+    margin: 30px 0 30px 22%;
+    
+}
+
+code {
+    display: block;
+    padding: 20px;
+    margin: 5px 100px 5px 30px ;
+    background-color: rgba(211, 211, 211, 0.295);
+    white-space: pre-line;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 500px ) {
+    #navbar {
+        width: 100%;
+        position: relative;
+    }
+
+    #main-doc {
+        margin: 5px;
+    }
+}
